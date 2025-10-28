@@ -7,21 +7,13 @@ import CommunitiesCard from "./features/sidebar/CommunitiesCard.jsx";
 
 import Tabs from "./features/tabs/Tabs.jsx";
 import FeedList from "./features/feed/FeedList.jsx";
+import {Routes, Route} from "react-router-dom"
+import Home from "./pages/Home"
 
 export default function App() {
   return (
-    <Layout
-      header={<HeaderSearch />}
-      sidebar={
-        <>
-          <ProfileCard />
-          <MentorsCard />
-          <CommunitiesCard />
-        </>
-      }
-    >
-      <Tabs />
-      <FeedList />
-    </Layout>
-  );
+    <>
+      <Home />
+    </>
+  )
 }

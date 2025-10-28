@@ -7,9 +7,7 @@ export default function CommunitiesCard() {
           <div key={n} className="flex items-center justify-between rounded-xl bg-white p-3 shadow-sm ring-1 ring-slate-200">
             <div className="text-sm font-medium">Community {n}</div>
             <div className="flex -space-x-1">
-              {[0,1,2,3].map(i => (
-                <div key={i} className="h-6 w-6 rounded-full bg-slate-200 ring-2 ring-white" />
-              ))}
+              
             </div>
           </div>
         ))}
