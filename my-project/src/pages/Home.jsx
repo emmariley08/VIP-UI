@@ -4,10 +4,10 @@ import HeaderSearch from "../components/HeaderSearch.jsx";
 import ProfileCard from "../features/sidebar/ProfileCard.jsx";
 import MentorsCard from "../features/sidebar/MentorsCard.jsx";
 import CommunitiesCard from "../features/sidebar/CommunitiesCard.jsx";
+import SocialPanel from "../features/social/SocialPanel.jsx";
 
-import Tabs from "../features/tabs/Tabs.jsx";
-import FeedList from "../features/feed/FeedList.jsx";
-import {Routes, Route} from "react-router-dom"
+import Tabs from "../features/social/components/Tabs.jsx";
+import FeedList from "../features/social/components/FeedList.jsx";
 
 export default function Home() {
     return (
@@ -21,8 +21,7 @@ export default function Home() {
               </>
             }
           >
-            <Tabs />
-            <FeedList />
+            <SocialPanel />
           </Layout>
       );
 }
